@@ -1,2 +1,0 @@
-# Kabbage-Patch
-Personal Website 
