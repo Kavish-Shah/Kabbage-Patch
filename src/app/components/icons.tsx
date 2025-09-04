@@ -1,9 +1,9 @@
-import { FaGithub, FaLinkedinIn, FaEnvelope, FaPaperclip} from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaEnvelope, FaPaperclip, FaInstagram} from "react-icons/fa";
 import Link from "next/link";
 
 export default function SocialIcons() {
   const iconClasses =
-    "sm:text-2xl hover:text-orange-500 transition-colors duration-200";
+    "sm:text-2xl hover:text-orange-500 transition-colors duration-200 text-white";
 
   return (
     <div className="flex space-x-6 mt-6">
@@ -33,6 +33,14 @@ export default function SocialIcons() {
         <FaPaperclip className={iconClasses} />
       </Link>
 
+    {/* Instagram */}
+      <Link
+        href="https://www.instagram.com/kavishs207"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaInstagram className={iconClasses} />
+      </Link>
 
       {/* Email */}
       <Link

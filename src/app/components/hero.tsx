@@ -7,7 +7,7 @@ import SocialIcons from './icons';
 export function Hero() {
     return (
         <div>
-            <div className="py-8 mt-10">
+            <div className="py-8 text-white">
                 <h1 className="text-3xl font-bold mb-4"> Kavish Shah </h1>
                 <h2 className="text-lg"> Freshman Pursuing Bioengineering @ UCLA</h2>
                 <MiniHeader/>
