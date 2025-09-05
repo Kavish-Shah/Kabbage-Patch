@@ -8,29 +8,43 @@ export function MiniHeader() {
     const active = useActiveSection();
 
     const MiniHeaderItems = [
-        { id: "about", label: "About"},
-        {id: "experience", label: "Experience"},
-        {id: "projects", label: "Projects"}
+        { id: "about", label: "ABOUT"},
+        {id: "experience", label: "EXPERIENCE"},
+        {id: "projects", label: "PROJECTS"}
     ];
 
     return (
-        <div>
-                <ul className="flex flex-col space-y-2 text-white py-4 justify-center">
-                {MiniHeaderItems.map((item) => (
-                    <li key={item.id}>
-                        <Link href={`#${item.id}`}
-                        scroll={true}
-                        className={`block px-3 py-2 rounded-md text-md font-medium transition-all duration-300 ${
-                        active === item.id
-                        ? "bg-blue-500 text-white shadow-lg shadow-blue-500/50 scale-105 w-1/3"
-                        : "text-white hover:text-blue-200 w-1/3"
-                        }`}
-                            >
-                            {item.label}
-                        </Link>
-                    </li>
-                ))}
-            </ul>
-        </div>
+       <div>
+  <ul className="flex flex-col space-y-2 py-4 justify-center">
+    {MiniHeaderItems.map((item) => {
+      const isActive = active === item.id;
+      return (
+        <li key={item.id}>
+          <Link
+            href={`#${item.id}`}
+            scroll={true}
+            className={`flex items-center px-3 py-2 rounded-md text-sm font-quicksand transition-all duration-300
+              ${isActive
+                ? "text-white text-bold shadow-lg shadow-sky-500/50 scale-105"
+                : "text-gray-300 hover:text-sky-300"
+              }`}
+          >
+            {/* Bar */}
+            <span
+              className={`mr-3 h-[2px] transition-all duration-300
+                ${isActive ? "w-10 bg-white" : "w-6 bg-gray-500 hover:bg-sky-300"}
+              `}
+            ></span>
+
+            {/* Label */}
+            <span>{item.label}</span>
+          </Link>
+        </li>
+      );
+    })}
+  </ul>
+</div>
+
+
     );
 }

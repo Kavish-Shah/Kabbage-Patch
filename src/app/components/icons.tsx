@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function SocialIcons() {
   const iconClasses =
-    "sm:text-2xl hover:text-orange-500 transition-colors duration-200 text-white";
+    "sm:text-2xl hover:text-sky-400 transition-colors duration-200 text-white";
 
   return (
     <div className="flex space-x-6 mt-6">

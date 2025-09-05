@@ -5,7 +5,7 @@ import Box from "./experience-box"
 export default function Experience() {
     return (
         <>
-        <div id="experience"className="flex flex-col space-y-[1em]">
+        <div id="experience" className="flex flex-col space-y-[1em]">
             <Box
                 period="July 2025 - Sep 2025"
                 title="Full Stack Developer Intern * AvantGarde Ventures"

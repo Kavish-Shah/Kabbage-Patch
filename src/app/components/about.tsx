@@ -3,9 +3,12 @@ import Link from "next/link";
 
 export default function About() {
     return (
-        <div className="text-white leading-relaxed space-y-[1em]"> 
+        <div className="font-quicksand text-gray-300 leading-relaxed space-y-[1em]"> 
 
-        <p> Hello! I'm a freshman at UCLA Samueli and I'm passionate about electrical engineering and technology. I... 
+        <p> 
+            Hello! I'm a freshman at UCLA Samueli School of Engineering and I'm passionate about 
+            <span className="text-white font-semibold hover:text-sky-300"> electrical engineering </span> and
+            <span className="text-white font-semibold hover:text-sky-300"> technology</span>. I... 
             insert another sentence hereincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
             in reprehenderit in voluptate
