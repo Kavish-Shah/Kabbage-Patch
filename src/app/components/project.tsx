@@ -21,7 +21,7 @@ export default function Project() {
             technologies={["React", "Tailwind CSS", "TypeScript", "SQL"]}
         />
         <Box
-            image="/pfp.jpeg"
+            image="/momentum.png"
             title="Stock Market Analysis Tool"
             description="Worked on building responsive UI components and improving accessibility for a SaaS dashboard."
             technologies={["Python", "Pandas"]}

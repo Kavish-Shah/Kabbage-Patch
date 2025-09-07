@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
-import defaultTheme from 'tailwindcss/defaultTheme';
+import defaultTheme from "tailwindcss/defaultTheme";
+import plugin from "tailwindcss/plugin";
 
 const config: Config = {
   content: [
@@ -10,15 +11,17 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        montserrat: ['var(--font-montserrat)'],
-        raleway: ['var(--font-quicksand)'],
-        sans: ['var(--font-geist-sans)', 'system-ui', 'sans-serif'],
-        mono: ['var(--font-geist-mono)', 'monospace'],
-        'league-spartan': ['var(--font-league-spartan)'],
+        montserrat: ["var(--font-montserrat)"],
+        raleway: ["var(--font-quicksand)"],
+        sans: ["var(--font-geist-sans)", "system-ui", "sans-serif"],
+        mono: ["var(--font-geist-mono)", "monospace"],
+        "league-spartan": ["var(--font-league-spartan)"],
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/typography"),
+  ],
 };
 
 export default config;

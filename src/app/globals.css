@@ -1,9 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --background: #1f2942;
+  --background: #1b2339;
   --foreground: #171717;
 }
+
 
 @theme inline {
   --color-background: var(--background);
@@ -41,4 +42,59 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+.glow-overlay {
+  --glow-size: 25rem;
+  position: absolute;
+  inset: 0;
+  user-select: none;
+  opacity: var(--glow-opacity, 0);
+  mask: radial-gradient(
+    var(--glow-size) var(--glow-size) at var(--glow-x) var
+    (--glow-y),
+    var(--glow-color) 1%,
+    transparent 50%
+  );
+  transition: 400ms mask ease;
+  will-change: mask;
+}
+
+/* Cursor glow styles */
+#cursor-glow {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(59, 130, 246, 0.15) 0%,
+    rgba(51, 152, 234, 0.1) 30%,
+    rgba(59, 130, 246, 0.05) 60%,
+    transparent 100%
+  );
+  filter: blur(20px);
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+  will-change: transform;
+}
+
+/* Hide default cursor on hover elements for better effect */
+/*
+* {
+  cursor: none !important;
+}
+*/
+
+/* Restore cursor for interactive elements 
+
+button, a, input, textarea, select, [role="button"], [tabindex] {
+  cursor: pointer !important;
+}
+*/
+/* Custom cursor for text selection */
+::selection {
+  background: rgba(59, 130, 246, 0.2);
 }

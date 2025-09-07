@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Montserrat, Quicksand, League_Spartan} from 'next/font/google';
 import "./globals.css";
+import { Header } from "./components/header";
+import CursorGlow from "./components/glow";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,7 +41,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable} ${quicksand.variable}`}>
-      <body>{children}</body>
+      <body>
+        <CursorGlow />
+        {children}
+        </body>
     </html> 
   );
 }
