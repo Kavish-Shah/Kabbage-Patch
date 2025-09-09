@@ -1,9 +1,91 @@
-import React from "react";
-import Image from "next/image";
-import { Carousel } from "@material-tailwind/react";
+"use client";
+
+import React, { useState } from "react";
 
 export default function CarouselComponent() {
+  const slides = [
+    { id: 1, src: "/sample.jpg" },
+    { id: 2, src: "/sample.jpg" },
+    { id: 3, src: "/sample.jpg" },
+    { id: 4, src: "/sample.jpg" },
+  ];
+
+  // Group slides into pairs
+  const slidePairs = [];
+  for (let i = 0; i < slides.length; i += 2) {
+    slidePairs.push([slides[i], slides[i + 1]].filter(Boolean));
+  }
+
+  const [currentPair, setCurrentPair] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentPair((prev) => (prev + 1) % slidePairs.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentPair((prev) => (prev - 1 + slidePairs.length) % slidePairs.length);
+  };
+
   return (
-    <h1 className="text-white">Coming Soon</h1>
+    <div className="w-full max-w-5xl mx-auto p-6 rounded-3xl bg-black/40 backdrop-blur-lg backdrop-saturate-150 shadow-[0_0_10px_theme(colors.cyan.300/15)]">
+      {/* Title */}
+      {/* Carousel wrapper */}
+      <div className="relative w-full flex justify-center items-center">
+        {/* Carousel frame */}
+        <div className="relative rounded-box overflow-hidden w-full z-10">
+          {/* Slide container */}
+          <div className="relative w-full min-h-[80vh]">
+            {slidePairs.map((pair, index) => (
+              <div
+                key={index}
+                className={`absolute inset-0 flex items-center justify-center gap-4 transition-opacity duration-500 ease-in-out ${
+                  currentPair === index ? "opacity-100 z-10" : "opacity-0 z-0"
+                }`}
+              >
+                {pair.map((slide) => (
+                  <div key={slide.id} className="w-1/2 flex justify-center items-center first:pl-8 last:pr-8 md:first:pl-12 md:last:pr-12">
+                    <img
+                      src={slide.src}
+                      alt={`Slide ${slide.id}`}
+                      className="h-auto w-auto max-h-[80vh] object-contain rounded-xl"
+                    />
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+
+          {/* Navigation buttons — inside the image frame */}
+          <button
+            onClick={prevSlide}
+            className="absolute top-1/2 -translate-y-1/2 left-4 md:left-6 z-30 btn btn-circle bg-gray-900/50 hover:bg-gray-800 text-white transition-transform duration-300 hover:scale-110"
+          >
+            ❮
+          </button>
+          <button
+            onClick={nextSlide}
+            className="absolute top-1/2 -translate-y-1/2 right-4 md:right-6 z-30 btn btn-circle bg-gray-900/50 hover:bg-gray-800 text-white transition-transform duration-300 hover:scale-110"
+          >
+            ❯
+          </button>
+        </div>
+        
+      </div>
+
+      {/* Dot navigation */}
+      <div className="flex justify-center gap-2 mt-4">
+        {slidePairs.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentPair(index)}
+            className={`btn btn-circle btn-xs ${
+              currentPair === index ? "bg-gray-200" : "bg-gray-500"
+            } hover:bg-gray-400`}
+          >
+            &nbsp;
+          </button>
+        ))}
+      </div>
+    </div>
   );
 }
