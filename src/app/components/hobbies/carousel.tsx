@@ -1,13 +1,16 @@
 "use client";
 
 import React, { useState } from "react";
+import { Dot } from "lucide-react";
 
 export default function CarouselComponent() {
   const slides = [
-    { id: 1, src: "/sample.jpg" },
-    { id: 2, src: "/sample.jpg" },
-    { id: 3, src: "/sample.jpg" },
-    { id: 4, src: "/sample.jpg" },
+    { id: 1, src: "/sample1.jpg" },
+    { id: 2, src: "/sample2.jpg" },
+    { id: 3, src: "/sample3.jpg" },
+    { id: 4, src: "/sample4.jpg" },
+    { id: 5, src: "/sample5.jpg" },
+    { id: 6, src: "/sample.jpg" },
   ];
 
   // Group slides into pairs
@@ -27,14 +30,16 @@ export default function CarouselComponent() {
   };
 
   return (
-    <div className="w-full max-w-5xl mx-auto p-6 rounded-3xl bg-black/40 backdrop-blur-lg backdrop-saturate-150 shadow-[0_0_10px_theme(colors.cyan.300/15)]">
+    <div className="w-full max-w-5xl mx-auto 
+  p-0 rounded-none bg-transparent backdrop-blur-0 backdrop-saturate-100 shadow-none 
+  md:p-6 md:rounded-3xl md:bg-black/40 md:backdrop-blur-lg md:backdrop-saturate-150 md:shadow-[0_0_10px_theme(colors.cyan.300/15)]">
       {/* Title */}
       {/* Carousel wrapper */}
       <div className="relative w-full flex justify-center items-center">
         {/* Carousel frame */}
         <div className="relative rounded-box overflow-hidden w-full z-10">
           {/* Slide container */}
-          <div className="relative w-full min-h-[80vh]">
+          <div className="relative w-full min-h-[30vh] sm:min-h-[80vh]">
             {slidePairs.map((pair, index) => (
               <div
                 key={index}
@@ -73,17 +78,19 @@ export default function CarouselComponent() {
       </div>
 
       {/* Dot navigation */}
-      <div className="flex justify-center gap-2 mt-4">
+      <div className="flex justify-center gap-2 mt-2 sm:mt-4">
         {slidePairs.map((_, index) => (
           <button
             key={index}
-            onClick={() => setCurrentPair(index)}
-            className={`btn btn-circle btn-xs ${
-              currentPair === index ? "bg-gray-200" : "bg-gray-500"
-            } hover:bg-gray-400`}
-          >
-            &nbsp;
-          </button>
+      onClick={() => setCurrentPair(index)}
+      className={`btn btn-circle rounded-full btn-xs group transition-all duration-300 ${
+        currentPair === index
+          ? "bg-gray-200 shadow-[0_0_8px_2px_rgba(255,255,255,0.5)]"
+          : "bg-gray-500"
+      } hover:bg-gray-400`}
+    >
+      <div className="w-2 h-2 rounded-full bg-gray-400 group-hover:bg-white transition-colors" />
+    </button>
         ))}
       </div>
     </div>

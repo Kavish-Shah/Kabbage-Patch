@@ -12,9 +12,10 @@ type ExperienceBoxProps = {
 export default function Box( {period, title, description, technologies} : ExperienceBoxProps) {
     return (
     <>
-    <div className="items-baseline max-w-sm w-full lg:max-w-full lg:flex rounded-lg overflow-hidden py-2 px-3 hover:bg-black/40 hover:backdrop-blur-lg hover:backdrop-saturate-150 hover:shadow-[0_0_10px_theme(colors.cyan.300/15)]">
+    <div className="items-baseline max-w-sm w-full lg:max-w-full lg:flex rounded-lg overflow-hidden py-2 px-3 bg-black/40 md:bg-transparent
+     md:hover:bg-black/40 md:hover:backdrop-blur-lg md:hover:backdrop-saturate-150 md:hover:shadow-[0_0_10px_theme(colors.cyan.300/15)]">
   {/* Left side period */}
-  <p className="font-family-quicksand text-gray-300 text-sm lg:w-48 flex-shrink-0">
+  <p className="mb-2 md:mb-0 font-family-quicksand text-gray-300 text-sm lg:w-48 flex-shrink-0">
     {period}
   </p>
 

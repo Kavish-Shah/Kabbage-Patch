@@ -9,24 +9,23 @@ import Framework from "./components/framework";
 export default function Home() {
   return (
     <>
-   <div className="sticky top-0 z-50 h-16 md:h-20 lg:h-24">
+   <div className="sticky top-0 z-50 h-20 md:h-20 lg:h-24">
       <Header/>
       <style>{`--header-height: 4rem;`}</style>
     </div>
-    <div className="flex min-h-screen"> 
+    <div className="flex flex-col md:flex-row min-h-screen"> 
 
       {/* left side of page */}
-      <div className="w-1/2 sticky
-            top-16 h-[calc(100vh-4rem)]
-            md:top-20 md:h-[calc(100vh-5rem)]
+      <div className="w-full md:w-1/2 md:sticky
+            top-16 md:top-20 md:h-[calc(100vh-5rem)]
             lg:top-24 lg:h-[calc(100vh-6rem)]
-            flex flex-col items-center overflow-hidden">
+            flex flex-col items-center overflow-visible md:overflow-hidden">
         <Hero/>
       </div>
 
       {/* right side of page */}
-      <div className="w-2/5 pt-16 md:pt-20 lg:pt-[2rem] leading-relaxed">
-        <div className="space-y-[5em]">
+      <div className="w-full md:w-2/5 pt-6 md:pt-20 lg:pt-[2rem] leading-relaxed">
+        <div className="space-y-12 md:space-y-[5em]">
           <div id="about" className="scroll-mt-16 md:scroll-mt-20 lg:scroll-mt-35">
             < About />
           </div>
@@ -37,9 +36,9 @@ export default function Home() {
             < Project />
           </div>
         </div>
-        <div>
-          < Framework />
-        </div>
+         <div id="framework" className="scroll-mt-16 md:scroll-mt-20 lg:scroll-mt-24">
+            < Framework />
+          </div>
       </div>
     </div>
     </>

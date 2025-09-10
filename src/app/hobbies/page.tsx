@@ -9,9 +9,9 @@ export default function Hobbies() {
         <Header/>
 
         {/* Main content */}
-        <div className="pt-10 relative min-h-screen flex flex-col items-center justify-start">
+        <div className="pt-2 pb-2 md:pt-10 md:pb-10 relative md:min-h-screen flex flex-col items-center justify-start">
             <Carousel />
-            <div className="flex flex-row items-start justify-between w-full max-w-9/10 gap-6 py-10">
+            <div className="flex flex-col space-y-2 md:flex-row md:items-start md:justify-between w-full max-w-9/10 gap-6 pt-10 md:pt-10">
                 <Hobby 
                 title="Racket Sports"
                 description="I've been playing tennis since childhood and am an avid fan of the sport. 

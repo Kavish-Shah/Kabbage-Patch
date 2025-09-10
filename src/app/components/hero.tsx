@@ -8,13 +8,14 @@ import SocialIcons from './icons';
 export function Hero() {
     return (
         <div className="flex flex-col items-center">
-            <div className="py-8 mb-6 sm:mb-8 lg:mb-10">
-                <h1 className="text-gray-200 text-6xl mb-4 font-league_spartan font-bold">
+            <div className="py-8 mb-1 sm:mb-8 lg:mb-10">
+                <h1 className="text-gray-200 text-5xl md:text-6xl mb-4 font-league_spartan font-bold text-center md:text-left">
                     Kavish Shah
                 </h1>
-                <h2 className="text-2xl text-gray-200 font-quicksand"> Bioengineering Undergraduate at UCLA</h2>
+                <h2 className="text-xl md:text-2xl text-gray-200 font-quicksand text-center md:text-left"> Bioengineering Undergraduate at UCLA</h2>
             </div>
-            <div className="flex flex-row items-center justify-center gap-[3em] overflow-visible mb-12 sm:mb-16 lg:mb-20">
+            <div className="px-4 sm:px-6 md:px-0 w-full">
+            <div className="max-w-screen-sm mx-auto flex flex-row items-center justify-between gap-6 sm:gap-[3em] overflow-visible mb-5 sm:mb-16 lg:mb-20">
                 {/* Profile Photo */}
                 <Image
                     src="/pfp.jpeg"
@@ -29,7 +30,8 @@ export function Hero() {
                     <MiniHeader />
                 </div>
             </div>
-            <div className="w-full">
+            </div>
+            <div className="flex justify-center w-full">
                 <SocialIcons />
             </div>
         </div>

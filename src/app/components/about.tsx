@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function About() {
     return (
-        <div className="font-quicksand text-gray-300 leading-relaxed space-y-[1em]"> 
+        <div className="px-4 md:px-0 font-quicksand text-gray-300 leading-relaxed space-y-[1em]"> 
 
         <p> 
             Hello! I'm a freshman at UCLA Samueli School of Engineering and I'm passionate about 

@@ -12,10 +12,11 @@ type ProjectBoxProps = {
 export default function Box( {image, title, description, technologies} : ProjectBoxProps) {
     return (
     <>
-    <div className="max-w-sm w-full lg:max-w-full lg:flex border border-transparent overflow-hidden py-3 px-3 rounded-lg hover:bg-black/40 hover:backdrop-blur-lg hover:backdrop-saturate-150 hover:shadow-[0_0_10px_theme(colors.cyan.300/15)]">
+    <div className="max-w-sm w-full lg:max-w-full lg:flex border border-transparent overflow-hidden py-3 px-3 rounded-lg bg-black/40 md:bg-transparent
+     hover:bg-black/40 hover:backdrop-blur-lg hover:backdrop-saturate-150 hover:shadow-[0_0_10px_theme(colors.cyan.300/15)]">
   {/* Left side image */}
   <div className="flex-none lg:w-48 flex items-start">
-    <div className="h-48 lg:h-24 w-full rounded-2xl overflow-hidden relative">
+    <div className="mb-4 md:mb-0 h-48 lg:h-24 w-full rounded-2xl overflow-hidden relative">
       <Image
         src={image}
         alt="description"
