@@ -6,26 +6,31 @@ export default function About() {
         <div className="px-4 md:px-0 font-quicksand text-gray-300 leading-relaxed space-y-[1em]"> 
 
         <p> 
-            Hello! I'm a freshman at UCLA Samueli School of Engineering and I'm passionate about 
-            <span className="text-white font-semibold hover:text-sky-300"> electrical engineering </span> and
-            <span className="text-white font-semibold hover:text-sky-300"> technology</span>. I... 
-            insert another sentence hereincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-            in reprehenderit in voluptate
+            Hello! My name is Kavish Shah, I'm a freshman at the UCLA Samueli School of Engineering, and I'm 
+            interested in pursuing a career in
+            <Link href="https://www.ee.ucla.edu/" className="text-sky-300 md:text-gray-100 font-bold hover:text-sky-300"> electrical engineering </Link> and
+            <Link href="https://www.cs.ucla.edu/" className="text-sky-300 md:text-gray-100 font-bold hover:text-sky-300"> technology</Link>. While 
+            many of my practical skills have come through developing software and web applications, 
+            I'm excited to explore the hardware side in college while continuing to expand my programming skills. 
         </p>
 
-        <p> Currently my declared major is Bioengineering and I plan to switch to Electrical Engineering in the spring...
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        <p> In the past, I have had experience working in a variety of settings, from teaching tech basics to seniors over Zoom, 
+            to collaborating on coding internships with peers, to rolling out pizzas at a local restaurant. 
         </p>
 
-        <p> In the past, I have...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-            sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p> I created this website to showcase the projects and experiences I'm proud of, in a space that feels more personal than 
+            a LinkedIn profile or resume (both of which are linked via the icons).
         </p>
         <p> 
-            In my free time you'll find me hitting the tennis courts, exploring local hikes, and lounging on my bed with my kindle. 
+            However, I also wanted to shed light on a part of me that does not show up on these other platforms. As such, there 
+            is another section dedicated to the
+            <Link href="/hobbies" className="text-sky-300 md:text-gray-100 font-bold hover:text-sky-300"> hobbies 
+            </Link> that make me who I am. The short version:
+        </p>
+        <p> 
+            In my free time, you'll find me hitting the tennis courts, exploring local hikes, and lounging on my bed with my Kindle. 
+            One more thing, I love listening to podcasts, and my favorite is 
+            <Link href="/hobbies" className="text-sky-300 md:text-gray-100 font-bold hover:text-sky-300"> Morning Brew</Link>!
         </p>
     </div>
     );

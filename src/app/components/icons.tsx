@@ -43,13 +43,13 @@ export default function SocialIcons() {
       </Link>
 
       {/* Email */}
-      <Link
-        href="mailto:kavishshah@example.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FaEnvelope className={iconClasses} />
-      </Link>
+      <a
+      href="https://mail.google.com/mail/?view=cm&to=kvshah@ucla.edu"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FaEnvelope className={iconClasses} />
+    </a>
     </div>
   );
 }

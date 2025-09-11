@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 type HobbyProps = {
     title: string;
-    description: string;
+    description: React.ReactNode;
  
 }
 
@@ -24,7 +24,7 @@ return (
 
       {/* Description */}
       {expanded && (
-        <p className="text-gray-300 text-sm leading-relaxed">
+        <p className="text-gray-300 text-sm leading-relaxed font-family-quicksand">
           {description}
         </p>
       )}

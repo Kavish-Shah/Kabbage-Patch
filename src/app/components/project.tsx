@@ -9,7 +9,7 @@ export default function Project() {
          <div id="projects" className="flex flex-col px-4 items-center space-y-2 md:space-y-[1em]">
 
         <Box
-            image="/pfp.jpeg"
+            image="/website.png"
             title="Personal Portfolio"
             description="Worked on building responsive UI components and improving accessibility for a SaaS dashboard."
             technologies={["React", "Tailwind CSS", "TypeScript", "SQL"]}

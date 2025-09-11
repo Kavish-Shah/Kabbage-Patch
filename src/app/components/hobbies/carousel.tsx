@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { Dot } from "lucide-react";
 
 export default function CarouselComponent() {
   const slides = [
@@ -10,7 +9,13 @@ export default function CarouselComponent() {
     { id: 3, src: "/sample3.jpg" },
     { id: 4, src: "/sample4.jpg" },
     { id: 5, src: "/sample5.jpg" },
-    { id: 6, src: "/sample.jpg" },
+    { id: 6, src: "/sample6.jpg" },
+    { id: 7, src: "/sample6*.jpg" },
+    { id: 8, src: "/sample7.jpg" },
+    { id: 9, src: "/sample8.jpg" },
+    { id: 10, src: "/sample9.jpg" },
+    { id: 11, src: "/sample10.jpg" },
+    { id: 12, src: "/sample11.jpg" },
   ];
 
   // Group slides into pairs
