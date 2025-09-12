@@ -30,7 +30,7 @@ export default function About() {
         <p> 
             In my free time, you'll find me hitting the tennis courts, exploring local hikes, and lounging on my bed with my Kindle. 
             One more thing, I love listening to podcasts, and my favorite is 
-            <Link href="/hobbies" className="text-sky-300 md:text-gray-100 font-bold hover:text-sky-300"> Morning Brew</Link>!
+            <Link href="/https://www.mbdailyshow.com/" className="text-sky-300 md:text-gray-100 font-bold hover:text-sky-300"> Morning Brew</Link>!
         </p>
     </div>
     );

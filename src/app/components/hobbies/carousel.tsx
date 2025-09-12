@@ -10,7 +10,7 @@ export default function CarouselComponent() {
     { id: 4, src: "/sample4.jpg" },
     { id: 5, src: "/sample5.jpg" },
     { id: 6, src: "/sample6.jpg" },
-    { id: 7, src: "/sample6*.jpg" },
+    { id: 7, src: "/sample.jpg" },
     { id: 8, src: "/sample7.jpg" },
     { id: 9, src: "/sample8.jpg" },
     { id: 10, src: "/sample9.jpg" },

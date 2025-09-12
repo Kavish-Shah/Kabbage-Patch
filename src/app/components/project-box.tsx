@@ -4,7 +4,7 @@ import Image from "next/image";
 
 type ProjectBoxProps = {
     image: string;
-    title: string;
+    title: React.ReactNode;
     description: string;
     technologies: string[];
 }
@@ -34,7 +34,7 @@ export default function Box( {image, title, description, technologies} : Project
         {title}
       </div>
 
-      <p className="font-family-quicksand text-gray-300 text-base mt-0">
+      <p className="text-sm font-family-quicksand text-gray-300 mt-0">
         {description}
       </p>
 

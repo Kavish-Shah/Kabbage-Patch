@@ -4,7 +4,7 @@ import Image from "next/image";
 
 type ExperienceBoxProps = {
     period: string;
-    title: string;
+    title: React.ReactNode;
     description: string;
     technologies: string[];
 }
@@ -20,13 +20,13 @@ export default function Box( {period, title, description, technologies} : Experi
   </p>
 
   {/* Right side content */}
-  <div className="flex flex-col justify-between leading-normal lg:ml-3">
+  <div className="flex flex-col justify-between leading-normal lg:ml-2">
     <div className="mb-4">
       <div className="font-family-quicksand text-gray-200 font-bold text-xl mb-2">
         {title}
       </div>
 
-      <p className="font-family-quicksand text-gray-300 text-base">
+      <p className="font-family-quicksand text-gray-300 text-sm">
         {description}
       </p>
 
