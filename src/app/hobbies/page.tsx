@@ -30,9 +30,9 @@ export default function Hobbies() {
                 <>
                 Growing up in South Orange County, I have done almost every local hike with my friends and family. 
                 Moreover, we've visited many of the national parks, including
-                <Link href="https://www.nps.gov/seki/index.htm" className="text-sky-300 font-bold hover:text-purple-300"> Sequoia</Link>,
-                <Link href="https://www.nps.gov/yose/index.htm" className="text-sky-300 font-bold hover:text-purple-300"> Yosemite</Link>, and
-                <Link href="https://www.nps.gov/zion/index.htm" className="text-sky-300 font-bold hover:text-purple-300"> Zion</Link>.
+                <Link href="https://www.nps.gov/seki/index.htm" target="_blank" className="text-sky-300 font-bold hover:text-purple-300"> Sequoia</Link>,
+                <Link href="https://www.nps.gov/yose/index.htm" target="_blank" className="text-sky-300 font-bold hover:text-purple-300"> Yosemite</Link>, and
+                <Link href="https://www.nps.gov/zion/index.htm" target="_blank" className="text-sky-300 font-bold hover:text-purple-300"> Zion</Link>.
                 In the last year, I have also begun going on local biking trails with friends every weekend. 
                 Whenever I visit a new location, I always try to capture a few good photos to add to my phone's lockscreen. 
                 Some of my favorites are showcased above <ArrowUp className="inline-block w-4 h-4 align-text-bottom font-bold text-sky-300"/> 
@@ -48,11 +48,11 @@ export default function Hobbies() {
                 When I got my Kindle in high school, it let me reconnect with reading in a way I hadn't since grade school. 
                 Nowadays, it's a nightly ritual of mine to read for a couple of minutes…or more before going to bed. 
                 My favorite series that I've read in recent years is
-                <Link href="https://www.goodreads.com/series/117100-red-rising-saga" className="text-sky-300 font-bold hover:text-purple-300"> Red Rising</Link>
+                <Link href="https://www.goodreads.com/series/117100-red-rising-saga" target="_blank"className="text-sky-300 font-bold hover:text-purple-300"> Red Rising</Link>
                 , but my all-time favorite novel is 
-                <Link href="https://www.goodreads.com/book/show/17165596-the-kite-runner?from_search=true&from_srp=true&qid=A7zxEU9fpe&rank=1" className="text-sky-300 font-bold hover:text-purple-300"> The Kite Runner </Link>.
+                <Link href="https://www.goodreads.com/book/show/17165596-the-kite-runner?from_search=true&from_srp=true&qid=A7zxEU9fpe&rank=1" target="_blank" className="text-sky-300 font-bold hover:text-purple-300"> The Kite Runner </Link>.
                 I'm always on the lookout for new books, so if you have any reccs, don't hesitate to
-                <Link href="https://www.instagram.com/kavishs207" className="text-purple-300 font-bold hover:text-sky-300"> reach out</Link>.
+                <Link href="https://www.instagram.com/kavishs207" target="_blank" className="text-purple-300 font-bold hover:text-sky-300"> reach out</Link>.
                 </>
                 }
                 />

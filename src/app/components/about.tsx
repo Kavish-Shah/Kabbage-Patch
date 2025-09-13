@@ -8,8 +8,8 @@ export default function About() {
         <p> 
             Hello! My name is Kavish Shah, I'm a freshman at the UCLA Samueli School of Engineering, and I'm 
             interested in pursuing a career in
-            <Link href="https://www.ee.ucla.edu/" className="text-sky-300 font-bold hover:text-purple-300"> electrical engineering </Link> and
-            <Link href="https://www.cs.ucla.edu/" className="text-sky-300 font-bold hover:text-purple-300"> technology</Link>. While 
+            <Link href="https://www.ee.ucla.edu/" target="_blank" className="text-sky-300 font-bold hover:text-purple-300"> electrical engineering </Link> and
+            <Link href="https://www.cs.ucla.edu/" target="_blank" className="text-sky-300 font-bold hover:text-purple-300"> technology</Link>. While 
             many of my practical skills have come through developing software and web applications, 
             I'm excited to explore the hardware side in college while continuing to expand my software skills. 
         </p>
@@ -24,13 +24,13 @@ export default function About() {
         <p> 
             However, I also wanted to shed light on a part of me that does not show up on these other platforms. As such, there 
             is another section dedicated to the
-            <Link href="/hobbies" className="text-sky-300 font-bold hover:text-purple-300"> hobbies 
+            <Link href="/hobbies" target="_blank"className="text-sky-300 font-bold hover:text-purple-300"> hobbies 
             </Link> that make me who I am. The short version:
         </p>
         <p> 
             In my free time, you'll find me hitting the tennis courts, exploring local hikes, and lounging on my bed with my Kindle. 
             One more thing, I love listening to podcasts, and my favorite is 
-            <Link href="https://www.mbdailyshow.com/" className="text-sky-300 font-bold hover:text-purple-300"> Morning Brew</Link>!
+            <Link href="https://www.mbdailyshow.com/" target="_blank" className="text-sky-300 font-bold hover:text-purple-300"> Morning Brew</Link>!
         </p>
     </div>
     );
