@@ -29,8 +29,8 @@ const leagueSpartan = League_Spartan({
 });
 
 export const metadata: Metadata = {
-  title: "Kavish Shah's Porfolio",
-  description: "Kabbage's Patch",
+  title: "Kavish Shah",
+  description: "kavishshah.vercel.app",
 };
 
 export default function RootLayout({
