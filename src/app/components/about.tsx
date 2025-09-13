@@ -11,7 +11,7 @@ export default function About() {
             <Link href="https://www.ee.ucla.edu/" className="text-sky-300 font-bold hover:text-purple-300"> electrical engineering </Link> and
             <Link href="https://www.cs.ucla.edu/" className="text-sky-300 font-bold hover:text-purple-300"> technology</Link>. While 
             many of my practical skills have come through developing software and web applications, 
-            I'm excited to explore the hardware side in college while continuing to expand my programming skills. 
+            I'm excited to explore the hardware side in college while continuing to expand my software skills. 
         </p>
 
         <p> In the past, I have had experience working in a variety of settings, from teaching tech basics to seniors over Zoom, 
