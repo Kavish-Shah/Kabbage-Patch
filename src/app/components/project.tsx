@@ -17,7 +17,7 @@ export default function Project() {
             description="Built over the last two weeks of summer between my senior year of high school and freshman year. 
             Programmed in Visual Studio Code and fully open source on GitHub. 
             Used Daisy UI in part, with the vast majority of styling done using Tailwind CSS. "
-            technologies={["React", "Tailwind CSS", "TypeScript", "SQL"]} 
+            technologies={["React", "Tailwind CSS", "TypeScript", "Next.js", "Vercel"]} 
         />
         <Box
             image="/smilebright.jpg"
@@ -28,7 +28,7 @@ export default function Project() {
             children regarding dental hygiene in India, I designed a website accessible in multiple languages
             to maximize our reach using a combination of WordPress and Bluehost. 
             Ultimately, we impacted hundreds of children through outreach with schools and dentists. "
-            technologies={["React", "Tailwind CSS", "TypeScript", "SQL"]}
+            technologies={["WordPress", "Bluehost", "Community Service"]}
         />
         <Box
             image="/momentum.png"
@@ -39,7 +39,7 @@ export default function Project() {
             }
             description="Developed a command-line application reliant on the Polygon & Yahoo Finance APIs to recommend stocks 
             to buy during a recession and for overall growth. Utilized the Beautiful Soup and Requests libraries. "
-            technologies={["Python", "Pandas"]}
+            technologies={["Python", "Pandas", "Beautiful Soup", "API Integration"]}
         />
          </div>
         </>
