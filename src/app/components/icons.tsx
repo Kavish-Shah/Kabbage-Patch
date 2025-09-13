@@ -18,15 +18,15 @@ export default function SocialIcons() {
 
       {/* LinkedIn */}
       <Link
-        href="https://www.linkedin.com/in/kavish-shah"
+        href="https://www.linkedin.com/in/kavish--shah/"
         target="_blank"
         rel="noopener noreferrer"
       >
         <FaLinkedinIn className={iconClasses} />
       </Link>
-      {/* LinkedIn */}
+      {/* Resume */}
       <Link
-        href="https://www.google.com"
+        href="https://www.linkedin.com/in/kavish--shah/"
         target="_blank"
         rel="noopener noreferrer"
       >
