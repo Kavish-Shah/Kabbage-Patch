@@ -34,7 +34,7 @@ export default function Experience() {
                 period="May 2025 - Sep 2025"
                 title={<>
                 <p>Mathematics Tutor - </p>
-                <Link href="https://www.bizprofile.net/ca/lake-forest/avant-garde-ventures-inc" target="_blank" className="text-sky-300 md:hover:text-purple-300">Carone STEM Academy</Link>
+                <Link href="https://www.caroneacademy.com/about" target="_blank" className="text-sky-300 md:hover:text-purple-300">Carone STEM Academy</Link>
                 </>
                 }
                 description="Taught multiple students in mathematics topics like Algebra 1, Geometry, Pre-Calculus, and Calculus 

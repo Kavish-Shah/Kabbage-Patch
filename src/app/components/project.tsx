@@ -10,7 +10,7 @@ export default function Project() {
         <Box
             image="/website.png"
             title={
-            <p>Personal <Link href="https://currypizzahouse.com/locations/lake-forest/" target="_blank" className="text-sky-300 md:hover:text-purple-300"> Project</Link>
+            <p>Personal <Link href="https://github.com/Kavish-Shah/Kavish-Shah" target="_blank" className="text-sky-300 md:hover:text-purple-300"> Project</Link>
             </p>            
           
             }
@@ -33,7 +33,7 @@ export default function Project() {
         <Box
             image="/momentum.png"
             title={
-            <p>Stock Market <Link href="https://currypizzahouse.com/locations/lake-forest/" target="_blank" className="text-sky-300 md:hover:text-purple-300"> Analysis Tool</Link>
+            <p>Stock Market <Link href="https://github.com/Kavish-Shah/Stock-Market-Screener" target="_blank" className="text-sky-300 md:hover:text-purple-300"> Analysis Tool</Link>
             </p>            
           
             }

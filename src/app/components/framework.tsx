@@ -13,7 +13,7 @@ export default function Framework() {
             <span className="text-white font-semibold hover:text-sky-300"> Node.js</span>,
             <span className="text-white font-semibold hover:text-sky-300"> Tailwind CSS</span>,
             <span className="text-white font-semibold hover:text-sky-300"> Next.js</span> in Visual Studio Code.
-            Resources <Link href="/resources" className="text-white font-semibold hover:text-sky-300">here</Link>.</p>
+            Resources <Link href="https://github.com/Kavish-Shah/Kavish-Shah" className="text-white font-semibold hover:text-sky-300">here</Link>.</p>
       </div>
     </div>
 </div>
