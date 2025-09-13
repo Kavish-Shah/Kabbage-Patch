@@ -1,4 +1,3 @@
-import react from 'react';
 import { Header } from '../components/header';
 import Carousel from '../components/hobbies/carousel';
 import Hobby from '../components/hobbies/hobby';
