@@ -22,7 +22,7 @@ export default function Project() {
         <Box
             image="/smilebright.jpg"
             title={
-                <p className="text-gray-200 md:hover:text-sky-300">Smile Bright Initiative</p>
+                <p className="text-gray-200">Smile Bright <span className="text-sky-300 md:hover:text-purple-300">Initiative</span></p>
             }
             description="As a co-founder of a nonprofit to educate and provide resources to underprivileged 
             children regarding dental hygiene in India, I designed a website accessible in multiple languages
