@@ -50,7 +50,7 @@ export default function Hobbies() {
                 My favorite series that I've read in recent years is
                 <Link href="https://www.goodreads.com/series/117100-red-rising-saga" className="text-sky-300 md:text-gray-200 font-bold hover:text-sky-300"> Red Rising</Link>
                 , but my all-time favorite novel is 
-                <Link href="https://www.goodreads.com/book/show/17165596-the-kite-runner?from_search=true&from_srp=true&qid=A7zxEU9fpe&rank=1" className="text-gray-200 font-bold hover:text-sky-300"> The Kite Runner </Link>.
+                <Link href="https://www.goodreads.com/book/show/17165596-the-kite-runner?from_search=true&from_srp=true&qid=A7zxEU9fpe&rank=1" className="text-sky-300 md:text-gray-200 font-bold hover:text-sky-300"> The Kite Runner </Link>.
                 I'm always on the lookout for new books, so if you have any reccs, don't hesitate to
                 <Link href="https://www.instagram.com/kavishs207" className="text-purple-300 md:text-gray-200 font-bold hover:text-purple-300"> reach out</Link>.
                 </>
